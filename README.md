@@ -1,3 +1,3 @@
 # minecraft
 
-https://github.com/omriza5/minecraft
+https://minecraft-omri-zaher.netlify.app/
