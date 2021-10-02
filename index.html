@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="landing-page-buttons">
+        <div class="start-btn">
+          <input class="btn" type="button" value="Start" id="startBtn" />
+        </div>
+        <div class="game-size-btn">
+          <input
+            class="btn selected"
+            type="button"
+            value="Small"
+            id="small-grid-btn"
+          />
+          <input class="btn" type="button" value="Large" id="large-grid-btn" />
+        </div>
+      </div>
+    </div>
+    <div class="game-container">
+      <div class="game"></div>
+      <div class="tools">
+        <div class="tool picaxe" id="picaxe"></div>
+        <div class="tool shovel" id="shovel"></div>
+        <div class="tool axe" id="axe"></div>
+        <div class="tool" id="inventory">
+          <span id="inventory-counter">0</span>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>

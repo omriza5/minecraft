@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* utils*/
+
+.btn {
+  padding: 0.5rem;
+  opacity: 0.6;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.selected {
+  background: black;
+  color: #fff;
+}
+
+/* Landing page */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("./img/main.jpg") no-repeat center center/cover;
+}
+
+.landing-page-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.start-btn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.start-btn input {
+  width: 100%;
+}
+.game-size-btn {
+  display: flex;
+  width: 100%;
+}
+.game-size-btn input {
+  width: 50%;
+  text-align: center;
+}
+
+.landing-page img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Game */
+.game-container {
+  display: none;
+  width: 110rem;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.game {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.tile {
+  cursor: pointer;
+}
+
+.tile:hover {
+  border: 1px solid rgb(209, 204, 204);
+}
+
+.tools {
+  width: 15%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tool {
+  width: 9rem;
+  height: 9rem;
+  border: 2px solid rgb(172, 167, 167);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.tool:hover {
+  border-color: #fff;
+}
+
+.picaxe {
+  background: url("./img/stone_pickaxe.png") no-repeat center center/cover;
+}
+
+.shovel {
+  background: url("./img/stone_shovel.png") no-repeat center center/cover;
+}
+
+.axe {
+  background: url("./img/stone_axe.png") no-repeat center center/cover;
+}
+
+.selected-tool {
+  border: 2px solid orchid;
+}
+
+.selected-tool:hover {
+  border: 2px solid orchid;
+}
+
+#inventory {
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
+}
