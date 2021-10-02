@@ -136,3 +136,9 @@ html {
   align-items: flex-end;
   font-size: 2rem;
 }
+
+@media (orientation: landscape) {
+  .game-container {
+    width: 100vw;
+  }
+}
